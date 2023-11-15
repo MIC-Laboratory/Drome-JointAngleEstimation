@@ -3,11 +3,19 @@ This project is to estimate the joint angles by deep learning
 
 This is [running video dataset](https://www.kaggle.com/datasets/kmader/running-videos).
 
+## Setup
+
+In VSCode, type `Cmd + Shift + P` (if on MacOS) and then search for `Dev Containers: Open Workspace in Container...`. Your Docker daemon must be running. VSCode will open this workspace inside the container with image `"image": "tensorflow/tensorflow:2.5.0-gpu"`. This image already has tensorflow installed.
+
+In the VSCode terminal, enter the following command to install relevant python packages.
+
 ```
 pip install -r requirements.txt
 ```
 
 ## Workflow:
+
+(Outdated)
 
 - No need to manually copy or move directories or files - avoid at all costs!
 - **Idea**: Just extract `.zip` file (downloaded from box) to `data/` and run python scripts!
@@ -35,6 +43,8 @@ rm -rf !(dl105_right-lower_hipflex_001*)
 ```
 
 ### Example directory structure for `./data/`
+
+(This structure is outdated.)
 
 ```
 ./data/
